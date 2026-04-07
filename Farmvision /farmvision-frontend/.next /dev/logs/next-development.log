@@ -1,0 +1,5 @@
+[00:00:03.323] Server  LOG     ✓ Ready in 2s
+[00:00:13.061] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:15.493] Browser WARN    Backend offline — using fallback data
+[02:03:23.169] Browser WARN    Chart data query failed: {}
+[02:03:23.387] Browser WARN    Chart data query failed: {}

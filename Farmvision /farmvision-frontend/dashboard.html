@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Agriculture Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<h2>Crop Production Dashboard</h2>
+
+<canvas id="chart"></canvas>
+
+<script>
+
+fetch("http://127.0.0.1:5000/crop-production")
+.then(res => res.json())
+.then(data => {
+
+let crops = data.map(x => x.crop);
+let production = data.map(x => x.production);
+
+new Chart(document.getElementById("chart"),{
+type:"bar",
+data:{
+labels:crops,
+datasets:[{
+label:"Crop Production",
+data:production
+}]
+}
+});
+
+});
+
+</script>
+
+</body>
+</html>

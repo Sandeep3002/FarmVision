@@ -1,0 +1,39 @@
+frontend :-
+
+cd FarmVision
+
+cd FarmVision-frontend
+
+npm install
+
+npm run dev
+
+http://localhost:3000
+
+ ....
+
+backend :- 
+
+pip install -r requirements.txt
+
+cd FarmVision
+
+cd backend
+
+dir
+
+python app.py
+
+,
+
+uvicorn main:app --reload --port 5000  -- main for command for backend
+
+pip install fastapi uvicorn psycopg2  -- eam
+
+uvicorn main:app --reload
+
+main.py
+
+http://127.0.0.1:5000
+
+http://127.0.0.1:5000/docs
